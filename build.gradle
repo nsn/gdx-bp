@@ -1,15 +1,17 @@
 apply plugin: "java"
+apply plugin: "maven"
+
+group = "com.nightspawn"
+version = "0.1"
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 compileJava.options.encoding = 'UTF-8'
 
-//sourceSets.main.java.srcDirs = ["src"]
-//sourceSets.main.resources.srcDirs = ["src"]
 
 ext {
-  gdxVersion = '1.7.0'
+  gdxVersion = '1.9.4'
 }
 
 repositories {

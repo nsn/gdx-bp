@@ -1,12 +1,26 @@
 # gdx-bp
 libgdx boilerplate lib
 
-usage:
-- add to your dependencies: 
+## usage
+- add to your dependencies in build.gradle: 
 -- compile "com.nightspawn:gdx-bp:0.1"
+- add to your MyGame.gwt.xml (or GwtDefinition.gwt.xml):
+-- <inherits name="com.nightspawn.GdxBp"/>
+
+## Logging
+*GdxLogger* is a (very) simple logger:
+```
+private static final GdxLogger LOG = new GdxLogger(MyClass.class);
+
+...
+
+    LOG.info("message one={}, two={}", obj1, obj3);
+
+...
+```
 
 ## Input
-Controls allows us to map input (keys, mouse...) to self-defined commands:
+*Controls* allows us to map input (keys, mouse...) to self-defined commands:
 ```
 public class MyControls extends Controls<MyControls.InputCommand> {
 
@@ -21,8 +35,8 @@ public class MyControls extends Controls<MyControls.InputCommand> {
     }
 }
 ```
-InputMultiplexer is just that - it sends inputs to multiple InputProcessors.
-InputCommandListener is an interface to allows us to received commands from a Controls instance.
+*InputMultiplexer* is just that - it sends inputs to multiple InputProcessors.
+*InputCommandListener* is an interface to allows us to received commands from a *Controls* instance.
 ```
 public class MyGame implements InputCommandListener<InputCommand> {
     private Stage stage;

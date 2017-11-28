@@ -2,10 +2,10 @@
 libgdx boilerplate lib
 
 ## usage
-- add to your dependencies in build.gradle: 
--- compile "com.nightspawn:gdx-bp:0.1"
-- add to your MyGame.gwt.xml (or GwtDefinition.gwt.xml):
--- <inherits name="com.nightspawn.GdxBp"/>
+add to your dependencies in *build.gradle*: 
+```compile "com.nightspawn:gdx-bp:0.1"```
+add to your MyGame.gwt.xml (or GwtDefinition.gwt.xml):
+```<inherits name="com.nightspawn.GdxBp"/>```
 
 ## Logging
 *GdxLogger* is a (very) simple logger:

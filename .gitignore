@@ -5,6 +5,11 @@
 .project
 .settings/
 
+# intelliJ
+*.iml
+
+*.swp
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 

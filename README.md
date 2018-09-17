@@ -2,8 +2,20 @@
 libgdx boilerplate lib
 
 ## usage
-add to your dependencies in *build.gradle*: 
-```compile "com.nightspawn:gdx-bp:0.1"```
+build and install to local repo:
+```gradle wrapper && ./gradlew build && ./gradlew install```
+
+add to your dependencies in your project's *build.gradle*: 
+```
+project(":core") {
+    ...
+    dependencies {
+        ...
+        compile "com.nightspawn:gdx-bp:0.1"
+    }
+}
+```
+
 add to your MyGame.gwt.xml (or GwtDefinition.gwt.xml):
 ```<inherits name="com.nightspawn.GdxBp"/>```
 
